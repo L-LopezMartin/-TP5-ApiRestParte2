@@ -17,8 +17,9 @@ import java.util.Optional;
 public class Inicial1Application {
 	private static final Logger logger = LoggerFactory.getLogger(Inicial1Application.class);
 
-	@Autowired
-	private BaseRepository baseRepository;
+//	@Autowired
+//	private BaseRepository baseRepository;
+
 	public static void main(String[] args) {
 		SpringApplication.run(Inicial1Application.class, args);
 
@@ -27,7 +28,7 @@ public class Inicial1Application {
 
 //	@Bean
 //	@Transactional
-//	CommandLineRunner init(PersonaRepository personaRepository) {
+//	CommandLineRunner init(BaseRepository baseRepository) {
 //		return args -> {
 //			// Creo un objeto persona
 //			Persona per1 = Persona.builder().
@@ -76,6 +77,6 @@ public class Inicial1Application {
 //			personaRepository.save(per1);
 
 //		};
-
+//
 //		};
 }

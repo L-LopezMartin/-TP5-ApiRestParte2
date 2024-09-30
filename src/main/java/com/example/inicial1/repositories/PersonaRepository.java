@@ -16,11 +16,11 @@ public interface PersonaRepository extends BaseRepository<Persona, Long> {
 
     //Queries sin paginación
 
-    List<Persona> findByNombreContainigOrApellidoContaining(String nombre, String apellido);
+//    List<Persona> findByNombreContainigOrApellidoContaining(String nombre, String apellido);
     //boolean existsByDni(int dni);
 
-    @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %?1%")
-    List<Persona> search(@Param("filtro") String filtro);
+//    @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %?1%")
+//    List<Persona> search(@Param("filtro") String filtro);
 
     @Query(
             value = "SELECT * FROM persona WHERE persona.nombre LIKE %:filtro% OR persona.apellido LIKE %?1%",
@@ -31,11 +31,11 @@ public interface PersonaRepository extends BaseRepository<Persona, Long> {
 
     //Queries con paginación
 
-    Page<Persona> findByNombreContaingOrApellidoContaining(String nombre, String apellido, Pageable pageable);
+//    Page<Persona> findByNombreContainingOrApellidoContaining(String nombre, String apellido, Pageable pageable);
     //boolean existsByDni(int dni);
 
-    @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %?1%")
-    Page<Persona> search(@Param("filtro") String filtro, Pageable pageable);
+//    @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %?1%")
+//    Page<Persona> search(@Param("filtro") String filtro, Pageable pageable);
 
     @Query(
             value = "SELECT * FROM persona WHERE persona.nombre LIKE %:filtro% OR persona.apellido LIKE %?1%",

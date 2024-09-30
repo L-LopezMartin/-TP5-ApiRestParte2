@@ -24,7 +24,7 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona, Long> implement
     public List<Persona> search(String filtro) throws Exception {
         try{
             //Método de query
-            //List<Persona> personas = personaRepository.findByNombreContaingOrApellidoContaining(filtro, filtro);
+            //List<Persona> personas = personaRepository.findByNombreContainingOrApellidoContaining(filtro, filtro);
 
             //Query JPQL
             //List<Persona> personas = personaRepository.search(filtro);
@@ -42,7 +42,7 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona, Long> implement
     public Page<Persona> search(String filtro, Pageable pageable) throws Exception {
         try{
             //Método de query
-            //Page<Persona> personas = personaRepository.findByNombreContaingOrApellidoContaining(filtro, filtro, pageable);
+            //Page<Persona> personas = personaRepository.findByNombreContainingOrApellidoContaining(filtro, filtro, pageable);
 
             //Query JPQL
             //Page<Persona> personas = personaRepository.search(filtro, pageable);
