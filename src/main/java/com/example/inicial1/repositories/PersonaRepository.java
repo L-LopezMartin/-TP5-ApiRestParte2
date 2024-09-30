@@ -16,7 +16,7 @@ public interface PersonaRepository extends BaseRepository<Persona, Long> {
 
     //Queries sin paginación
 
-    List<Persona> findByNombreContaingOrApellidoContaining(String nombre, String apellido);
+    List<Persona> findByNombreContainigOrApellidoContaining(String nombre, String apellido);
     //boolean existsByDni(int dni);
 
     @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %?1%")
