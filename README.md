@@ -8,6 +8,7 @@
 <hr></hr>
 
 <p>Con los siguientes links se pueden ver los resultados del proyecto:</p>
+<p>Nota: Cuando se abra el link tomará al menos un minuto en ponerse en funcionamiento, ya que es aproxiamadamente el tiempo que le toma a render poner el proyecto en ejecución</p>
 <h3>Swagger UI de la API</h3>
 <p>Gracias a SwaggerUI se pueden hacer peticiones a la api</p>
 <a href="https://tp6-apirestparte2.onrender.com/swagger-ui/index.html">https://tp6-apirestparte2.onrender.com/swagger-ui/index.html</a>
